@@ -5,17 +5,19 @@
 
 // Set your brand colors
 $purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
+$black: hsl(0, 0%, 4%);
+$blue: hsl(217, 71%, 53%);
+$red: hsl(348, 86%, 61%);
+$grey-darker: hsl(0, 0%, 21%);
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
-$link: $pink;
+$link: $blue;
+$dark: $grey-darker; 
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -31,7 +33,9 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/level.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
