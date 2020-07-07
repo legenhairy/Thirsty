@@ -1,22 +1,26 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
-  	<nav class="navbar">
-		<div class="container">
-			<div class="navbar-brand">
-			    <a class="navbar-item">
-			        <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+  	<nav className="navbar">
+		<div className="container is-fluid">
+			<div className="navbar-brand">
+			    <a className="navbar-item">
+			        <img src="" alt="Thirsty App" />
 			     </a>
 			</div>
-			<div class="navbar-menu">
-			    <div class="navbar-end">
-			        <a class="navbar-item is-active">
+			<div className="navbar-menu">
+			    <div className="navbar-end">
+			        <a className="navbar-item is-active">
 			            Home
 			        </a>
-			        <a class="navbar-item">
-			            Examples
-			        </a>
+			        <Link to="/signin" className="navbar-item">
+						Sign In
+					</Link>
+					<Link to="/signup" className="navbar-item">
+						Sign Up
+					</Link>
 			   </div>
 			</div>
 		</div>
