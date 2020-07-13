@@ -12,9 +12,6 @@ function NavBar() {
 			</div>
 			<div className="navbar-menu">
 			    <div className="navbar-end">
-			        <a className="navbar-item is-active">
-			            Home
-			        </a>
 			        <Link to="/signin" className="navbar-item">
 						Sign In
 					</Link>

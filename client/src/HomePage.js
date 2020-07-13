@@ -6,18 +6,14 @@ import './HomePage.css';
 function HomePage() {
 	const [input, setUserInput] = useState('');
 	const [businesses, setBusinesses] = useState(null);
+	const [isLoading, setIsLoading] = useState(true);
 
 	//this is where i make the Yelp API call with the user input
 	const callApi = () => {
 		const yelpURL = "https://api.yelp.com/v3/businesses/search?categories=bubbletea&location=sf";
-		fetch(yelpURL, {
-			headers: {
-				'Content-Type': 'application/json',
-				'Authorization': process.env.YELP_API_KEY,
-				'Access-Control-Allow-Origin': '*'
-			}
-		}).then(response => response.json())
-		  .then(data => console.log(data));
+		//after we click, we want to attach the search location to the api call
+		//then render the results in a list	
+
 	}
 
 	//using dynamic name to set the value of field
@@ -34,7 +30,7 @@ function HomePage() {
 			  </div>
 
 			  <div className="hero-body">
-				  <div class="container has-text-centered is-fluid">	
+				<div class="container has-text-centered is-fluid">	
 					<div class="columns is-vcentered">
 						<div class="column">
 							<p className="title is-1 has-text-black">
