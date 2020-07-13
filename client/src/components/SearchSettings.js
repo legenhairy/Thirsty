@@ -8,25 +8,25 @@ function SearchSettings() {
                 <h1 className='subtitle'><strong>Nearby Boba Shops in San Francisco</strong></h1>
             </div>
             <div className='filters'>
-                <button className="button">
+                <button className="button is-rounded">
                     <span class="icon"><i class="fab fa-sliders-h"></i></span>
                     <span>All Filters</span>
                 </button>
                 <div className="buttons has-addons">
-                    <button className="button">$</button>
-                    <button className="button">$$</button>
-                    <button className="button">$$$</button>
-                    <button className="button">$$$$</button>
+                    <button className="button is-rounded">$</button>
+                    <button className="button is-rounded">$$</button>
+                    <button className="button is-rounded">$$$</button>
+                    <button className="button is-rounded">$$$$</button>
                 </div>
-                <button className="button">
+                <button className="button is-rounded">
                     <span class="icon"><i class="fab fa-clock"></i></span>
                     <span>Open Now</span>
                 </button>
-                <button className="button">
+                <button className="button is-rounded">
                     <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Curbside Pickup</span>
                 </button>
-                <button className="button">
+                <button className="button is-rounded">
                     <span>Yelp Delivery</span>
                 </button>
             </div>

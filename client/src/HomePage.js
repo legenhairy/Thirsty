@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import './HomePage.css';
 
 //fetch the yelp data on user click, filter by their location input
 function HomePage() {
 	const [input, setUserInput] = useState('');
-	const [businesses, setBusinesses] = useState(null);
 	const [isLoading, setIsLoading] = useState(true);
 
 	//this is where i make the Yelp API call with the user input
 	const callApi = () => {
-		const yelpURL = "https://api.yelp.com/v3/businesses/search?categories=bubbletea&location=sf";
+		
 		//after we click, we want to attach the search location to the api call
 		//then render the results in a list	
-
+		console.log('pass the user input to the new page')
 	}
 
 	//using dynamic name to set the value of field

@@ -1,15 +1,16 @@
 import React from 'react';
 import NavBar from '../components/Navbar';
 import SearchSettings from '../components/SearchSettings';
-import { Link } from 'react-router-dom';
+import SearchResults from '../components/SearchResults';
 
-function SearchResults() {
+function Search() {
     return (
         <div>
             <NavBar />
             <SearchSettings />
+            <SearchResults />
         </div>
     );
 }
 
-export default SearchResults;
+export default Search;
