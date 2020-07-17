@@ -3,7 +3,7 @@ import SearchResult from '../components/SearchResult';
 
 function SearchResults() {
     return (
-        <div>    
+        <div className='search-results'>    
             <SearchResult />
             <SearchResult />
         </div>

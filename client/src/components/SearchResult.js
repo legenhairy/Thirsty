@@ -1,5 +1,6 @@
 import React from 'react';
 import './SearchResult.css';
+import SearchRating from '../components/SearchRating';
 
 function SearchResult() {
     return (
@@ -7,7 +8,7 @@ function SearchResult() {
             <img src='https://via.placeholder.com/150' alt='business' className='business-img' />
             <div className='business-info'>
                 <h1 className="title is-4">Bubble Tea Place</h1>
-                <p>Rating</p>
+                <SearchRating />
                 <p>$ <span class="tag">Bubble Tea</span> <span class="tag">Coffee & Tea</span></p>
             </div>
             <div className='contact-info'>
