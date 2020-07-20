@@ -9,7 +9,7 @@ function SearchResult() {
             <div className='business-info'>
                 <h1 className="title is-4">Bubble Tea Place</h1>
                 <SearchRating />
-                <p>$ <span class="tag">Bubble Tea</span> <span class="tag">Coffee & Tea</span></p>
+                <p>$ <span className="tag">Bubble Tea</span> <span className="tag">Coffee & Tea</span></p>
             </div>
             <div className='contact-info'>
                 <p>+49123456789</p>

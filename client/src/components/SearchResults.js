@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchResult from '../components/SearchResult';
+import './SearchResults.css';
 
 function SearchResults() {
     return (

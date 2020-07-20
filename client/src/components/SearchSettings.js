@@ -1,11 +1,11 @@
 import React from 'react';
 import './SearchSettings.css';
 
-function SearchSettings() {
+function SearchSettings(props) {
     return (
         <div className='settings-container'>
             <div className='search-settings'>
-                <h1 className='subtitle'><strong>Nearby Boba Shops in San Francisco</strong></h1>
+    <h1 className='subtitle'><strong>Nearby Boba Shops in {props.location}</strong></h1>
             </div>
             <div className='filters'>
                 <button className="button is-rounded">
