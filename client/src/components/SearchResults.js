@@ -7,6 +7,7 @@ function SearchResults() {
         <div className='search-results'>    
             <SearchResult />
             <SearchResult />
+            <SearchResult />
         </div>
     );
 }
