@@ -1,29 +1,23 @@
 import React from "react";
 import logo from '../assets/logo.png';
-import styles from './Navbar.css';
+import '../components/Navbar.css';
+import SearchBar from '../components/SearchBar';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
-  	<nav className="navbar">
-		<div className="container is-fluid">
-			<div className="navbar-brand">
-			    <Link to='/'>
-					<img src={logo} width="110" height="30" alt='thirsty logo' />	
-				</Link>
-			</div>
-			<div className="navbar-menu">
-			    <div className="navbar-end">
-			        <Link to="/signin" className="navbar-item">
-						Sign In
-					</Link>
-					<Link to="/signup" className="navbar-item">
-						Sign Up
-					</Link>
-			   </div>
-			</div>
+  	<div className='nav-bar'>
+		<img src={logo} className='logo' alt='thirsty logo' />
+		<SearchBar />
+		<div>	
+			<Link to='/signin'>	
+				<button className='nav-button'>Sign In</button>
+			</Link>
+			<Link to='/signup'>
+				<button className='nav-button'>Register</button>
+			</Link>
 		</div>
- 	</nav>
+	</div>
   )
 }
 
